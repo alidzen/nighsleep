@@ -1,0 +1,29 @@
+/* =====================================
+   Utilities.
+==================================== */
+
+/* Спрайты */
+
+$icons: sprite-map("icons/*.png", $spacing: 5px, $layout: horizontal);
+
+.social {
+  display: block;
+}
+
+.fb {
+  width: sprite-width($icons, fb-hv);
+  height: sprite-height($icons, fb-hv);
+  background: sprite($icons, fb-hv);
+}
+
+.vk {
+  width: sprite-width($icons, tw-hv);
+  height: sprite-height($icons, tw-hv);
+  background: sprite($icons, tw-hv);
+}
+
+.inst {
+  width: sprite-width($icons, profile-hv);
+  height: sprite-height($icons, profile-hv);
+  background: sprite($icons, profile-hv);
+}

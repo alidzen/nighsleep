@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* Compass */
+/* Base */
+/*=======================================
+   Settings. Задаем переменные.
+======================================= */
+/* Font-size */
+/* Font-weight */
+/* Colors */
+/* Белый фон  */
+/* Основнйо зеленый */
+/* Светло-зеленый (подложки) +25% */
+/* Основной желтый */
+/* header * footer bg */
+/* Colors font*/
+/* Черный */
+/* Серый */
+/* Синий, ссылки */
+/* Светло-зеленый, в шапке */
+/* Typograthy */
+/* Шрифт остального текста */
+/*=====================================
+   Base styles. Задаем переменные, заголовки, body и прочее  по умолчанию.
+===================================== */
+/* line 5, ../sass/base/_base.scss */
+body {
+  outline: 2px dotted blue;
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 1200px;
+  background-color: #f5f5f5;
+  color: #131313;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Helvetica", serif;
+  line-height: 18px;
+}
+
+/*
+* END Base styles.
+*
+*/
+/* line 10, ../sass/style.scss */
+header {
+  outline: 3px solid red;
+}
+
+/* Utilities */
+/* =====================================
+   Utilities.
+==================================== */
+/* Спрайты */
+/* line 9, ../sass/utilities/_utilities.scss */
+.social {
+  display: block;
+}
+
+/* line 13, ../sass/utilities/_utilities.scss */
+.fb {
+  width: 10px;
+  height: 20px;
+  background: url('/img/icons-s26938260bd.png') 0 0;
+}
+
+/* line 19, ../sass/utilities/_utilities.scss */
+.vk {
+  width: 22px;
+  height: 18px;
+  background: url('/img/icons-s26938260bd.png') -37px 0;
+}
+
+/* line 25, ../sass/utilities/_utilities.scss */
+.inst {
+  width: 17px;
+  height: 16px;
+  background: url('/img/icons-s26938260bd.png') -15px 0;
+}
+
+/* Blocks */
+/* line 1, ../sass/blocks/_b-header-banner.scss */
+.b-header-banner {
+  outline: 2px dashed yellow;
+  width: 100%;
+}
+
+/* line 1, ../sass/blocks/_b-nav.scss */
+.b-nav-wrapper {
+  background-color: brown;
+}
+
+/* line 1, ../sass/blocks/_b-header-title.scss */
+.b-header-title {
+  text-align: center;
+}

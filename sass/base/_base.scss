@@ -1,0 +1,21 @@
+/*=====================================
+   Base styles. Задаем переменные, заголовки, body и прочее  по умолчанию.
+===================================== */
+
+body {
+  outline: 2px dotted blue;
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 1200px;
+  background-color: $color-bg-main;
+  color: $color-font-main;
+  font-weight: $font-weight-regular;
+  font-size: $font-S;
+  font-family: $font-family-text;
+  line-height: 18px;
+}
+
+/*
+* END Base styles.
+*
+*/
