@@ -7,14 +7,16 @@
 @import "base/_settings";
 @import "base/_base";
 
-header {
-  outline: 3px solid red;
-}
-
 /* Utilities */
 @import "utilities/_utilities.scss";
 
 /* Blocks */
-@import "blocks/_b-header-banner.scss";
-@import "blocks/_b-nav.scss";
-@import "blocks/_b-header-title.scss";
+@import "blocks/header/_b-header-banner.scss";
+@import "blocks/header/_b-nav.scss";
+@import "blocks/header/_b-header-title.scss";
+
+/* Main */
+@import "blocks/main/_b-features.scss";
+@import "blocks/main/_b-sms-mail.scss";
+
+

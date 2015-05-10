@@ -6,9 +6,13 @@
 $font-S: 12px;
 $font-SL: 14px;
 $font-M: 16px;
+.font-M { font-size: 16px; }
+$font-ML: 17px; /* ссылка в features content */
 $font-L: 18px;
-$font-XL: 20px;
+$font-XL: 24px;
+$font-XL-bigger: 28px; /* h3 в b-sms-mail */
 $font-XXl: 36px;
+$font-XXXL: 45px; /* Главный заголовок */
 
 /* Font-weight */
 $font-weight-light: 300;
@@ -21,6 +25,8 @@ $color-2: #5aa141; /* Основнйо зеленый */
 $color-2-light: #6bae52; /* Светло-зеленый (подложки) +25% */
 $color-3: #ffdf5c; /* Основной желтый */
 $color-bg-header: #e5e5e5; /* header * footer bg */
+$color-white: #ffffff; /* белый текст текст */
+
 
 /* Colors font*/
 $color-font-main: #131313; /* Черный */
@@ -31,4 +37,4 @@ $color-font-4: #b0d6a4; /* Светло-зеленый, в шапке */
 
 
 /* Typograthy */
-$font-family-text: "Helvetica", serif; /* Шрифт остального текста */
+$font-family-text: "Helvetica", sans-serif; /* Шрифт остального текста */

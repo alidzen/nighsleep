@@ -10,20 +10,20 @@ $icons: sprite-map("icons/*.png", $spacing: 5px, $layout: horizontal);
   display: block;
 }
 
-.fb {
-  width: sprite-width($icons, fb-hv);
-  height: sprite-height($icons, fb-hv);
-  background: sprite($icons, fb-hv);
+.fb-header {
+  width: sprite-width($icons, fb-header);
+  height: sprite-height($icons, fb-header);
+  background: sprite($icons, fb-header);
 }
 
-.vk {
-  width: sprite-width($icons, tw-hv);
-  height: sprite-height($icons, tw-hv);
-  background: sprite($icons, tw-hv);
+.vk-header {
+  width: sprite-width($icons, vk-header);
+  height: sprite-height($icons, vk-header);
+  background: sprite($icons, vk-header);
 }
 
-.inst {
-  width: sprite-width($icons, profile-hv);
-  height: sprite-height($icons, profile-hv);
-  background: sprite($icons, profile-hv);
+.inst-header {
+  width: sprite-width($icons, inst-header);
+  height: sprite-height($icons, inst-header);
+  background: sprite($icons, inst-header);
 }

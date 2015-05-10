@@ -5,6 +5,14 @@
    Settings. Задаем переменные.
 ======================================= */
 /* Font-size */
+/* line 9, ../sass/base/_settings.scss */
+.font-M {
+  font-size: 16px;
+}
+
+/* ссылка в features content */
+/* h3 в b-sms-mail */
+/* Главный заголовок */
 /* Font-weight */
 /* Colors */
 /* Белый фон  */
@@ -12,6 +20,7 @@
 /* Светло-зеленый (подложки) +25% */
 /* Основной желтый */
 /* header * footer bg */
+/* белый текст текст */
 /* Colors font*/
 /* Черный */
 /* Серый */
@@ -24,7 +33,6 @@
 ===================================== */
 /* line 5, ../sass/base/_base.scss */
 body {
-  outline: 2px dotted blue;
   margin: 0 auto;
   width: 1200px;
   max-width: 1200px;
@@ -32,19 +40,39 @@ body {
   color: #131313;
   font-weight: 400;
   font-size: 12px;
-  font-family: "Helvetica", serif;
+  font-family: "Helvetica", sans-serif;
   line-height: 18px;
+}
+
+/* line 18, ../sass/base/_base.scss */
+.b-features article {
+  /* Fix для float элементов */
+}
+/* line 19, ../sass/base/_base.scss */
+.b-features article:before, .b-features article:after {
+  content: "";
+  display: table;
+}
+/* line 24, ../sass/base/_base.scss */
+.b-features article:after {
+  clear: both;
+}
+
+/* line 27, ../sass/base/_base.scss */
+.inner-wrapper {
+  margin: 0 99px;
+}
+
+/* line 31, ../sass/base/_base.scss */
+.noactive-color {
+  /* тусклый цвет */
+  color: #808080;
 }
 
 /*
 * END Base styles.
 *
 */
-/* line 10, ../sass/style.scss */
-header {
-  outline: 3px solid red;
-}
-
 /* Utilities */
 /* =====================================
    Utilities.
@@ -56,39 +84,241 @@ header {
 }
 
 /* line 13, ../sass/utilities/_utilities.scss */
-.fb {
-  width: 10px;
-  height: 20px;
-  background: url('/img/icons-s26938260bd.png') 0 0;
+.fb-header {
+  width: 22px;
+  height: 22px;
+  background: url('/img/icons-s1bb80ea51a.png') 0 0;
 }
 
 /* line 19, ../sass/utilities/_utilities.scss */
-.vk {
+.vk-header {
   width: 22px;
-  height: 18px;
-  background: url('/img/icons-s26938260bd.png') -37px 0;
+  height: 22px;
+  background: url('/img/icons-s1bb80ea51a.png') -54px 0;
 }
 
 /* line 25, ../sass/utilities/_utilities.scss */
-.inst {
-  width: 17px;
-  height: 16px;
-  background: url('/img/icons-s26938260bd.png') -15px 0;
+.inst-header {
+  width: 22px;
+  height: 22px;
+  background: url('/img/icons-s1bb80ea51a.png') -27px 0;
 }
 
 /* Blocks */
-/* line 1, ../sass/blocks/_b-header-banner.scss */
+/* line 1, ../sass/blocks/header/_b-header-banner.scss */
 .b-header-banner {
-  outline: 2px dashed yellow;
   width: 100%;
 }
 
-/* line 1, ../sass/blocks/_b-nav.scss */
-.b-nav-wrapper {
-  background-color: brown;
+/* line 5, ../sass/blocks/header/_b-header-banner.scss */
+.banner-list {
+  height: 35px;
+  font-size: 14px;
+  background-color: #5aa141;
+  margin: 0;
+}
+/* line 10, ../sass/blocks/header/_b-header-banner.scss */
+.banner-list:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 16, ../sass/blocks/header/_b-header-banner.scss */
+.banner-list li {
+  display: inline-block;
+  margin-left: 160px;
+}
+/* line 19, ../sass/blocks/header/_b-header-banner.scss */
+.banner-list li:first-of-type {
+  margin-left: 50px;
+  color: #ffffff;
+}
+/* line 23, ../sass/blocks/header/_b-header-banner.scss */
+.banner-list li:last-of-type {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 27, ../sass/blocks/header/_b-header-banner.scss */
+.banner-list .btn-header {
+  background-color: #ffe36e;
+  border-bottom: 2px solid #e8c319;
+  padding: 2px 23px 0;
 }
 
-/* line 1, ../sass/blocks/_b-header-title.scss */
+/* line 1, ../sass/blocks/header/_b-nav.scss */
+.b-nav {
+  width: 100%;
+}
+
+/* line 5, ../sass/blocks/header/_b-nav.scss */
+.nav-list {
+  height: 50px;
+  font-size: 14px;
+  color: #131313;
+  background-color: #e5e5e5;
+}
+/* line 10, ../sass/blocks/header/_b-nav.scss */
+.nav-list:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 16, ../sass/blocks/header/_b-nav.scss */
+.nav-list li {
+  display: inline-block;
+  /* соц. сети */
+}
+/* line 18, ../sass/blocks/header/_b-nav.scss */
+.nav-list li .active {
+  color: #808080;
+}
+/* line 19, ../sass/blocks/header/_b-nav.scss */
+.nav-list li:first-of-type {
+  margin-left: 13px;
+  color: #ffffff;
+}
+/* line 23, ../sass/blocks/header/_b-nav.scss */
+.nav-list li:nth-child(2) {
+  margin-left: 107px;
+}
+/* line 24, ../sass/blocks/header/_b-nav.scss */
+.nav-list li:nth-child(3) {
+  margin-left: 96px;
+}
+/* line 25, ../sass/blocks/header/_b-nav.scss */
+.nav-list li:nth-child(4) {
+  margin-left: 80px;
+}
+/* line 26, ../sass/blocks/header/_b-nav.scss */
+.nav-list li:nth-child(5) {
+  margin-left: 78px;
+}
+/* line 27, ../sass/blocks/header/_b-nav.scss */
+.nav-list li:nth-child(6) {
+  margin-left: 90px;
+}
+/* line 30, ../sass/blocks/header/_b-nav.scss */
+.nav-list li .social {
+  margin-left: 2px;
+  margin-bottom: -7px;
+  border-radius: 50%;
+}
+/* line 35, ../sass/blocks/header/_b-nav.scss */
+.nav-list li .fb-header {
+  margin-left: 65px;
+}
+/* line 37, ../sass/blocks/header/_b-nav.scss */
+.nav-list li a {
+  color: #131313;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 1, ../sass/blocks/header/_b-header-title.scss */
 .b-header-title {
+  position: relative;
   text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 6, ../sass/blocks/header/_b-header-title.scss */
+.b-header-title h1 {
+  position: relative;
+  display: inline-block;
+  margin-top: 47px;
+  font-size: 45px;
+  z-index: 99;
+}
+/* line 12, ../sass/blocks/header/_b-header-title.scss */
+.b-header-title h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background-color: #ffe36e;
+  z-index: -1;
+}
+/* line 25, ../sass/blocks/header/_b-header-title.scss */
+.b-header-title p {
+  font-size: 16px;
+  color: #808080;
+}
+/* line 29, ../sass/blocks/header/_b-header-title.scss */
+.b-header-title a {
+  display: block;
+  margin-top: -6px;
+  font-size: 16px;
+}
+
+/* Main */
+/* line 1, ../sass/blocks/main/_b-features.scss */
+.b-features {
+  margin-top: 41px;
+}
+/* line 3, ../sass/blocks/main/_b-features.scss */
+.b-features h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+/* line 8, ../sass/blocks/main/_b-features.scss */
+.b-features img {
+  float: left;
+}
+
+/* line 11, ../sass/blocks/main/_b-features.scss */
+.features-content {
+  margin-top: 22px;
+  margin-bottom: 24px;
+  padding-top: 28px;
+  padding-bottom: 23px;
+  border-top: 1px dashed #808080;
+  border-bottom: 1px dashed #808080;
+}
+/* line 18, ../sass/blocks/main/_b-features.scss */
+.features-content p {
+  font-size: 16px;
+}
+
+/* line 22, ../sass/blocks/main/_b-features.scss */
+.features-content-text > a {
+  display: inline-block;
+  margin-top: 9px;
+  font-size: 17px;
+  letter-spacing: -.3px;
+}
+
+/* line 30, ../sass/blocks/main/_b-features.scss */
+.features-content-text {
+  outline: 2px solid red;
+  margin-left: 350px;
+  margin-top: -22px;
+  margin-right: 58px;
+  line-height: 19px;
+  letter-spacing: .18px;
+}
+/* line 37, ../sass/blocks/main/_b-features.scss */
+.features-content-text h2 {
+  font-size: 24px;
+}
+/* line 41, ../sass/blocks/main/_b-features.scss */
+.features-content-text p:last-of-type {
+  margin-top: 27px;
+}
+
+/* line 2, ../sass/blocks/main/_b-sms-mail.scss */
+.b-sms-mail h3 {
+  font-size: 28px;
+}
+/* line 3, ../sass/blocks/main/_b-sms-mail.scss */
+.b-sms-mail p {
+  font-size: 14px;
+}
+/* line 4, ../sass/blocks/main/_b-sms-mail.scss */
+.b-sms-mail p:first-of-type {
+  font-size: 16px;
+  font-weight: 700;
 }

@@ -1,0 +1,10 @@
+.b-sms-mail {
+  h3 { font-size: $font-XL-bigger; }
+  p {
+    &:first-of-type { 
+      font-size: $font-M;
+      font-weight: $font-weight-bold;
+    }
+    font-size: $font-SL;
+  }
+}

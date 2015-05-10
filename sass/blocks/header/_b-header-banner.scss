@@ -1,0 +1,33 @@
+.b-header-banner {
+  width: 100%;
+}
+
+.banner-list {
+  height: 35px;
+  font-size: $font-SL;
+  background-color: $color-2;
+  margin: 0;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  li {
+    display: inline-block;
+    margin-left: 160px;
+    &:first-of-type {
+      margin-left: 50px;
+      color: $color-white;
+    }
+    &:last-of-type {
+      color: rgba($color-white, .5);
+    }
+  }
+  .btn-header {
+    background-color: #ffe36e;
+    border-bottom: 2px solid #e8c319;
+    padding: 2px 23px 0;
+  }
+}
+
