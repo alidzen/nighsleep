@@ -74,3 +74,16 @@
   .other-places { margin-top: 27px; }
 }
 
+.places {
+  padding-top: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed $color-font-2;
+  &:first-of-type {
+    border-top: 1px dashed $color-font-2;
+  }
+  font-size: $font-M;
+  h2 {
+    font-size: $font-XL;
+  }
+}
+

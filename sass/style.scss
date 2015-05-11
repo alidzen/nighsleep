@@ -4,8 +4,9 @@
 
 /* Base */
 //@import "base/_reset";
-@import "base/_settings";
-@import "base/_base";
+@import "base/_settings.scss";
+@import "base/_base.scss";
+@import "base/_boot-modified.scss"; /* changed bootstrap classes */
 
 /* Utilities */
 @import "utilities/_utilities.scss";

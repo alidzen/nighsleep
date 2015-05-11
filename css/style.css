@@ -84,6 +84,17 @@ a {
 * END Base styles.
 *
 */
+/* Выпадающие блоки */
+/* line 2, ../sass/base/_boot-modified.scss */
+.well {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background-color: inherit;
+  border-radius: 0;
+}
+
+/* changed bootstrap classes */
 /* Utilities */
 /* =====================================
    Utilities.
@@ -369,6 +380,22 @@ a {
 /* line 74, ../sass/blocks/main/_b-features.scss */
 .feature-5 .other-places {
   margin-top: 27px;
+}
+
+/* line 77, ../sass/blocks/main/_b-features.scss */
+.places {
+  padding-top: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #808080;
+  font-size: 16px;
+}
+/* line 81, ../sass/blocks/main/_b-features.scss */
+.places:first-of-type {
+  border-top: 1px dashed #808080;
+}
+/* line 85, ../sass/blocks/main/_b-features.scss */
+.places h2 {
+  font-size: 24px;
 }
 
 /* line 1, ../sass/blocks/main/_b-sms-mail.scss */
@@ -706,16 +733,38 @@ footer {
 /* line 1, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list {
   height: 70px;
+  margin-top: 2px;
+  padding: 0;
+  font-size: 16px;
+  letter-spacing: .4px;
 }
-/* line 3, ../sass/blocks/footer/_b-footer-list.scss */
+/* line 7, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 9, ../sass/blocks/footer/_b-footer-list.scss */
+/* line 13, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list li {
   display: inline-block;
+  margin-left: 108px;
   list-style: none;
+}
+/* line 17, ../sass/blocks/footer/_b-footer-list.scss */
+.footer-list li:first-of-type {
+  margin-left: -5px;
+}
+/* line 18, ../sass/blocks/footer/_b-footer-list.scss */
+.footer-list li:nth-of-type(2) {
+  width: 287px;
+  margin-left: 8px;
+}
+/* line 22, ../sass/blocks/footer/_b-footer-list.scss */
+.footer-list li:last-of-type {
+  margin-left: 268px;
+}
+/* line 24, ../sass/blocks/footer/_b-footer-list.scss */
+.footer-list .copyright {
+  color: #808080;
 }
