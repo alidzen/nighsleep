@@ -255,57 +255,106 @@ body {
 }
 
 /* Main */
-/* line 1, ../sass/blocks/main/_b-features.scss */
+/* Задаем общие стили для блоков */
+/* line 2, ../sass/blocks/main/_b-features.scss */
 .b-features {
   margin-top: 41px;
 }
-/* line 3, ../sass/blocks/main/_b-features.scss */
+/* line 4, ../sass/blocks/main/_b-features.scss */
 .b-features h1 {
   font-size: 36px;
   text-transform: uppercase;
 }
-/* line 8, ../sass/blocks/main/_b-features.scss */
+/* line 9, ../sass/blocks/main/_b-features.scss */
 .b-features img {
   float: left;
 }
 
-/* line 11, ../sass/blocks/main/_b-features.scss */
+/* line 12, ../sass/blocks/main/_b-features.scss */
+.b-features > article:not(first-of-type) {
+  margin-top: 39px;
+}
+
+/* line 16, ../sass/blocks/main/_b-features.scss */
 .features-content {
   margin-top: 22px;
-  margin-bottom: 24px;
   padding-top: 28px;
   padding-bottom: 23px;
   border-top: 1px dashed #808080;
   border-bottom: 1px dashed #808080;
 }
-/* line 18, ../sass/blocks/main/_b-features.scss */
+/* line 22, ../sass/blocks/main/_b-features.scss */
 .features-content p {
   font-size: 16px;
 }
 
-/* line 22, ../sass/blocks/main/_b-features.scss */
-.features-content-text > a {
+/* line 25, ../sass/blocks/main/_b-features.scss */
+.features-content-text > a,
+.features-content-text > span > a,
+.features-content-text > span {
   display: inline-block;
   margin-top: 9px;
   font-size: 17px;
   letter-spacing: -.3px;
 }
 
-/* line 30, ../sass/blocks/main/_b-features.scss */
+/* line 34, ../sass/blocks/main/_b-features.scss */
 .features-content-text {
-  outline: 2px solid red;
   margin-left: 350px;
   margin-top: -22px;
   margin-right: 58px;
   line-height: 19px;
   letter-spacing: .18px;
 }
-/* line 37, ../sass/blocks/main/_b-features.scss */
+/* line 40, ../sass/blocks/main/_b-features.scss */
 .features-content-text h2 {
   font-size: 24px;
 }
 /* line 41, ../sass/blocks/main/_b-features.scss */
 .features-content-text p:last-of-type {
+  margin-top: 27px;
+}
+
+/* line 44, ../sass/blocks/main/_b-features.scss */
+.other-places {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 16px;
+  letter-spacing: .25px;
+}
+
+/* Вносим корректировки в отдельные блоки */
+/* line 53, ../sass/blocks/main/_b-features.scss */
+.feature-3 .features-content-text p:last-of-type {
+  margin-top: 64px;
+}
+
+/* line 57, ../sass/blocks/main/_b-features.scss */
+.feature-4 .features-content-text {
+  margin-top: -20px;
+}
+/* line 58, ../sass/blocks/main/_b-features.scss */
+.feature-4 .other-places {
+  margin-top: 21px;
+}
+
+/* line 61, ../sass/blocks/main/_b-features.scss */
+.feature-4 .features-content-text > span,
+.feature-4 .features-content-text > span > a {
+  margin-top: 0;
+}
+
+/* line 67, ../sass/blocks/main/_b-features.scss */
+.feature-4 .features-content-text > span:first-of-type {
+  margin-top: 10px;
+}
+
+/* line 72, ../sass/blocks/main/_b-features.scss */
+.feature-5 .features-content-text p:last-of-type {
+  margin-top: 64px;
+}
+/* line 74, ../sass/blocks/main/_b-features.scss */
+.feature-5 .other-places {
   margin-top: 27px;
 }
 
