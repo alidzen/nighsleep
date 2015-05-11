@@ -358,16 +358,28 @@ body {
   margin-top: 27px;
 }
 
-/* line 2, ../sass/blocks/main/_b-sms-mail.scss */
+/* line 1, ../sass/blocks/main/_b-sms-mail.scss */
+.b-sms-mail {
+  margin-top: 57px;
+  margin-right: 388px;
+}
+/* line 4, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail h3 {
   font-size: 28px;
 }
-/* line 3, ../sass/blocks/main/_b-sms-mail.scss */
+/* line 5, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail p {
   font-size: 14px;
+  line-height: 17px;
+  letter-spacing: .1px;
 }
-/* line 4, ../sass/blocks/main/_b-sms-mail.scss */
+/* line 6, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail p:first-of-type {
+  margin-top: 17px;
   font-size: 16px;
-  font-weight: 700;
+  line-height: inherit;
+}
+/* line 14, ../sass/blocks/main/_b-sms-mail.scss */
+.b-sms-mail p:last-of-type {
+  margin-top: 17px;
 }
