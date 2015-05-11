@@ -14,6 +14,8 @@ body {
   line-height: 18px;
 }
 
+a { color: $color-font-3; }
+
 %clearfix { /* Fix для float элементов */
   &:before,
   &:after {
@@ -30,6 +32,7 @@ body {
 .noactive-color { /* тусклый цвет */
   color: $color-font-2; 
 } 
+
 
 /*
 * END Base styles.

@@ -45,25 +45,30 @@ body {
 }
 
 /* line 17, ../sass/base/_base.scss */
+a {
+  color: #0084f2;
+}
+
+/* line 19, ../sass/base/_base.scss */
 .b-features article, .b-info, .b-how-to-be article {
   /* Fix для float элементов */
 }
-/* line 18, ../sass/base/_base.scss */
+/* line 20, ../sass/base/_base.scss */
 .b-features article:before, .b-info:before, .b-how-to-be article:before, .b-features article:after, .b-info:after, .b-how-to-be article:after {
   content: "";
   display: table;
 }
-/* line 23, ../sass/base/_base.scss */
+/* line 25, ../sass/base/_base.scss */
 .b-features article:after, .b-info:after, .b-how-to-be article:after {
   clear: both;
 }
 
-/* line 26, ../sass/base/_base.scss */
+/* line 28, ../sass/base/_base.scss */
 .inner-wrapper {
   margin: 0 99px;
 }
 
-/* line 30, ../sass/base/_base.scss */
+/* line 32, ../sass/base/_base.scss */
 .noactive-color {
   /* тусклый цвет */
   color: #808080;
@@ -577,4 +582,54 @@ body {
 .b-questions-lawyer p:last-of-type {
   margin-top: 27px;
   border: none;
+}
+/* line 31, ../sass/blocks/main/_b-questions-lawyer.scss */
+.b-questions-lawyer p span {
+  color: #808080;
+}
+
+/* line 1, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy {
+  margin-top: 41px;
+  font-size: 16px;
+}
+/* line 4, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy .header {
+  padding-bottom: 26px;
+  border-bottom: 1px dashed #808080;
+}
+/* line 7, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy .header h1 {
+  display: block;
+  font-size: 28px;
+  letter-spacing: .2px;
+}
+/* line 12, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy .header .tumbler {
+  display: inline-block;
+  margin-top: 9px;
+}
+/* line 15, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy .header .tumbler a:first-of-type {
+  color: #131313;
+}
+/* line 20, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy p {
+  padding-bottom: 11px;
+  line-height: 23px;
+  border-bottom: 1px dashed #808080;
+  letter-spacing: .2px;
+}
+/* line 21, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy p:first-of-type {
+  margin-top: 12px;
+}
+/* line 26, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy p:last-of-type {
+  margin-top: 18px;
+  border: none;
+}
+/* line 30, ../sass/blocks/main/_b-vacancy.scss */
+.b-vacancy p span {
+  color: #808080;
 }
