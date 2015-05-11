@@ -11,7 +11,7 @@
 }
 
 /* ссылка в features content */
-/* h3 в b-sms-mail */
+/* h3 в b-sms-mail, h3 b-info  */
 /* Главный заголовок */
 /* Font-weight */
 /* Colors */
@@ -382,4 +382,84 @@ body {
 /* line 14, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail p:last-of-type {
   margin-top: 17px;
+}
+
+/* Задаем общие стили для блоков */
+/* line 2, ../sass/blocks/main/_b-info.scss */
+.b-info {
+  margin-top: 65px;
+}
+/* line 4, ../sass/blocks/main/_b-info.scss */
+.b-info h3 {
+  font-size: 28px;
+}
+/* line 5, ../sass/blocks/main/_b-info.scss */
+.b-info h4,
+.b-info p {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: .2px;
+}
+/* line 11, ../sass/blocks/main/_b-info.scss */
+.b-info p {
+  margin-top: 29px;
+  line-height: 24px;
+}
+/* line 15, ../sass/blocks/main/_b-info.scss */
+.b-info [class^="block-"] {
+  float: left;
+  box-sizing: border-box;
+  width: 478px;
+  height: 470px;
+  padding: 12px 11px 18px 28px;
+  border: 3px solid #ffdf5c;
+}
+/* line 23, ../sass/blocks/main/_b-info.scss */
+.b-info .content {
+  position: relative;
+  margin-top: 29px;
+  padding-left: 146px;
+}
+/* line 27, ../sass/blocks/main/_b-info.scss */
+.b-info .content img {
+  position: absolute;
+  left: 0;
+}
+/* line 32, ../sass/blocks/main/_b-info.scss */
+.b-info .footer {
+  font-size: 18px;
+}
+
+/* Корректировки блоков */
+/* line 40, ../sass/blocks/main/_b-info.scss */
+.b-info .block-1 .footer {
+  margin-top: 30px;
+  line-height: 21px;
+}
+
+/* line 48, ../sass/blocks/main/_b-info.scss */
+.b-info .block-2 {
+  margin-left: 46px;
+}
+/* line 50, ../sass/blocks/main/_b-info.scss */
+.b-info .block-2 h3 {
+  line-height: 32px;
+  letter-spacing: .5px;
+}
+/* line 54, ../sass/blocks/main/_b-info.scss */
+.b-info .block-2 h4 {
+  line-height: 24px;
+}
+/* line 55, ../sass/blocks/main/_b-info.scss */
+.b-info .block-2 p {
+  margin-top: 23px;
+}
+/* line 56, ../sass/blocks/main/_b-info.scss */
+.b-info .block-2 .content {
+  margin-top: 23px;
+}
+/* line 57, ../sass/blocks/main/_b-info.scss */
+.b-info .block-2 .footer {
+  margin-top: 66px;
+  letter-spacing: .5px;
 }
