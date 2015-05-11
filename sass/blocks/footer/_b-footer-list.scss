@@ -1,0 +1,13 @@
+.footer-list {
+  height: 70px;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+}

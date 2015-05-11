@@ -32,6 +32,11 @@ a { color: $color-font-3; }
 .noactive-color { /* тусклый цвет */
   color: $color-font-2; 
 } 
+.hr-line {
+  width: 100%;
+  border-top: 1px solid #dedede;
+  
+}
 
 
 /*

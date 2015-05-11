@@ -50,16 +50,16 @@ a {
 }
 
 /* line 19, ../sass/base/_base.scss */
-.b-features article, .b-info, .b-how-to-be article {
+.b-features article, .b-info, .b-how-to-be article, .b-footer-info {
   /* Fix для float элементов */
 }
 /* line 20, ../sass/base/_base.scss */
-.b-features article:before, .b-info:before, .b-how-to-be article:before, .b-features article:after, .b-info:after, .b-how-to-be article:after {
+.b-features article:before, .b-info:before, .b-how-to-be article:before, .b-footer-info:before, .b-features article:after, .b-info:after, .b-how-to-be article:after, .b-footer-info:after {
   content: "";
   display: table;
 }
 /* line 25, ../sass/base/_base.scss */
-.b-features article:after, .b-info:after, .b-how-to-be article:after {
+.b-features article:after, .b-info:after, .b-how-to-be article:after, .b-footer-info:after {
   clear: both;
 }
 
@@ -72,6 +72,12 @@ a {
 .noactive-color {
   /* тусклый цвет */
   color: #808080;
+}
+
+/* line 35, ../sass/base/_base.scss */
+.hr-line {
+  width: 100%;
+  border-top: 1px solid #dedede;
 }
 
 /*
@@ -92,21 +98,28 @@ a {
 .fb-header {
   width: 22px;
   height: 22px;
-  background: url('/img/icons-s1bb80ea51a.png') 0 0;
+  background: url('/img/icons-s699929d2ed.png') 0 0;
 }
 
 /* line 19, ../sass/utilities/_utilities.scss */
 .vk-header {
   width: 22px;
   height: 22px;
-  background: url('/img/icons-s1bb80ea51a.png') -54px 0;
+  background: url('/img/icons-s699929d2ed.png') -124px 0;
 }
 
 /* line 25, ../sass/utilities/_utilities.scss */
 .inst-header {
   width: 22px;
   height: 22px;
-  background: url('/img/icons-s1bb80ea51a.png') -27px 0;
+  background: url('/img/icons-s699929d2ed.png') -97px 0;
+}
+
+/* line 31, ../sass/utilities/_utilities.scss */
+.flag-rus {
+  width: 30px;
+  height: 20px;
+  background: url('/img/icons-s699929d2ed.png') -62px 0;
 }
 
 /* Blocks */
@@ -151,69 +164,64 @@ a {
 }
 
 /* line 1, ../sass/blocks/header/_b-nav.scss */
-.b-nav {
-  width: 100%;
-}
-
-/* line 5, ../sass/blocks/header/_b-nav.scss */
 .nav-list {
   height: 50px;
   font-size: 14px;
   color: #131313;
   background-color: #e5e5e5;
 }
-/* line 10, ../sass/blocks/header/_b-nav.scss */
+/* line 6, ../sass/blocks/header/_b-nav.scss */
 .nav-list:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 16, ../sass/blocks/header/_b-nav.scss */
+/* line 12, ../sass/blocks/header/_b-nav.scss */
 .nav-list li {
   display: inline-block;
   /* соц. сети */
 }
-/* line 18, ../sass/blocks/header/_b-nav.scss */
+/* line 14, ../sass/blocks/header/_b-nav.scss */
 .nav-list li .active {
   color: #808080;
 }
-/* line 19, ../sass/blocks/header/_b-nav.scss */
+/* line 15, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:first-of-type {
   margin-left: 13px;
   color: #ffffff;
 }
-/* line 23, ../sass/blocks/header/_b-nav.scss */
+/* line 19, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(2) {
   margin-left: 107px;
 }
-/* line 24, ../sass/blocks/header/_b-nav.scss */
+/* line 20, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(3) {
   margin-left: 96px;
 }
-/* line 25, ../sass/blocks/header/_b-nav.scss */
+/* line 21, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(4) {
   margin-left: 80px;
 }
-/* line 26, ../sass/blocks/header/_b-nav.scss */
+/* line 22, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(5) {
   margin-left: 78px;
 }
-/* line 27, ../sass/blocks/header/_b-nav.scss */
+/* line 23, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(6) {
   margin-left: 90px;
 }
-/* line 30, ../sass/blocks/header/_b-nav.scss */
+/* line 26, ../sass/blocks/header/_b-nav.scss */
 .nav-list li .social {
   margin-left: 2px;
   margin-bottom: -7px;
   border-radius: 50%;
 }
-/* line 35, ../sass/blocks/header/_b-nav.scss */
+/* line 31, ../sass/blocks/header/_b-nav.scss */
 .nav-list li .fb-header {
   margin-left: 65px;
 }
-/* line 37, ../sass/blocks/header/_b-nav.scss */
+/* line 33, ../sass/blocks/header/_b-nav.scss */
 .nav-list li a {
   color: #131313;
   text-transform: uppercase;
@@ -632,4 +640,82 @@ a {
 /* line 30, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy p span {
   color: #808080;
+}
+
+/* Footer */
+/* line 1, ../sass/blocks/footer/_b-footer-info.scss */
+footer {
+  height: 350px;
+  margin-top: 51px;
+  background-color: #e5e5e5;
+}
+
+/* line 7, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+/* line 11, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .rights,
+.b-footer-info .authors {
+  margin-top: 53px;
+  box-sizing: border-box;
+  float: left;
+  height: 226px;
+  /* height + margin-top + .hr-line = 280px */
+  width: 50%;
+}
+/* line 20, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .rights {
+  padding-top: 1px;
+}
+/* line 22, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .rights p {
+  margin-top: 16;
+  color: #808080;
+}
+/* line 28, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .authors {
+  padding-left: 57px;
+}
+/* line 31, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .authors .authors-list li {
+  list-style: none;
+}
+/* line 33, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .authors .authors-list li:nth-of-type(2) {
+  margin-top: 10px;
+}
+/* line 34, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .authors .authors-list li:nth-of-type(7) {
+  margin-top: 39px;
+}
+/* line 35, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .authors .authors-list li:last-of-type {
+  margin-top: 10px;
+}
+/* line 37, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .authors .authors-list li:last-of-type a {
+  text-transform: uppercase;
+}
+/* line 39, ../sass/blocks/footer/_b-footer-info.scss */
+.b-footer-info .authors .authors-list li span {
+  color: #808080;
+}
+
+/* line 1, ../sass/blocks/footer/_b-footer-list.scss */
+.footer-list {
+  height: 70px;
+}
+/* line 3, ../sass/blocks/footer/_b-footer-list.scss */
+.footer-list:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 9, ../sass/blocks/footer/_b-footer-list.scss */
+.footer-list li {
+  display: inline-block;
+  list-style: none;
 }
