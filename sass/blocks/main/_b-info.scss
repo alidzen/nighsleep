@@ -1,6 +1,7 @@
 /* Задаем общие стили для блоков */
 .b-info {
   margin-top: 65px;
+  @extend %clearfix;
   h3 { font-size: $font-XL-bigger; }
   h4,
   p { 

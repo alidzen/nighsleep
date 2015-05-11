@@ -44,26 +44,26 @@ body {
   line-height: 18px;
 }
 
-/* line 18, ../sass/base/_base.scss */
-.b-features article {
+/* line 17, ../sass/base/_base.scss */
+.b-features article, .b-info, .b-how-to-be article {
   /* Fix для float элементов */
 }
-/* line 19, ../sass/base/_base.scss */
-.b-features article:before, .b-features article:after {
+/* line 18, ../sass/base/_base.scss */
+.b-features article:before, .b-info:before, .b-how-to-be article:before, .b-features article:after, .b-info:after, .b-how-to-be article:after {
   content: "";
   display: table;
 }
-/* line 24, ../sass/base/_base.scss */
-.b-features article:after {
+/* line 23, ../sass/base/_base.scss */
+.b-features article:after, .b-info:after, .b-how-to-be article:after {
   clear: both;
 }
 
-/* line 27, ../sass/base/_base.scss */
+/* line 26, ../sass/base/_base.scss */
 .inner-wrapper {
   margin: 0 99px;
 }
 
-/* line 31, ../sass/base/_base.scss */
+/* line 30, ../sass/base/_base.scss */
 .noactive-color {
   /* тусклый цвет */
   color: #808080;
@@ -389,23 +389,23 @@ body {
 .b-info {
   margin-top: 65px;
 }
-/* line 4, ../sass/blocks/main/_b-info.scss */
+/* line 5, ../sass/blocks/main/_b-info.scss */
 .b-info h3 {
   font-size: 28px;
 }
-/* line 5, ../sass/blocks/main/_b-info.scss */
+/* line 6, ../sass/blocks/main/_b-info.scss */
 .b-info h4,
 .b-info p {
   font-size: 16px;
   line-height: 21px;
   letter-spacing: .2px;
 }
-/* line 11, ../sass/blocks/main/_b-info.scss */
+/* line 12, ../sass/blocks/main/_b-info.scss */
 .b-info p {
   margin-top: 29px;
   line-height: 24px;
 }
-/* line 15, ../sass/blocks/main/_b-info.scss */
+/* line 16, ../sass/blocks/main/_b-info.scss */
 .b-info [class^="block-"] {
   float: left;
   box-sizing: border-box;
@@ -414,52 +414,99 @@ body {
   padding: 12px 11px 18px 28px;
   border: 3px solid #ffdf5c;
 }
-/* line 23, ../sass/blocks/main/_b-info.scss */
+/* line 24, ../sass/blocks/main/_b-info.scss */
 .b-info .content {
   position: relative;
   margin-top: 29px;
   padding-left: 146px;
 }
-/* line 27, ../sass/blocks/main/_b-info.scss */
+/* line 28, ../sass/blocks/main/_b-info.scss */
 .b-info .content img {
   position: absolute;
   left: 0;
 }
-/* line 32, ../sass/blocks/main/_b-info.scss */
+/* line 33, ../sass/blocks/main/_b-info.scss */
 .b-info .footer {
   font-size: 18px;
 }
 
 /* Корректировки блоков */
-/* line 40, ../sass/blocks/main/_b-info.scss */
+/* line 41, ../sass/blocks/main/_b-info.scss */
 .b-info .block-1 .footer {
   margin-top: 30px;
   line-height: 21px;
 }
 
-/* line 48, ../sass/blocks/main/_b-info.scss */
+/* line 49, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 {
   margin-left: 46px;
 }
-/* line 50, ../sass/blocks/main/_b-info.scss */
+/* line 51, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 h3 {
   line-height: 32px;
   letter-spacing: .5px;
 }
-/* line 54, ../sass/blocks/main/_b-info.scss */
+/* line 55, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 h4 {
   line-height: 24px;
 }
-/* line 55, ../sass/blocks/main/_b-info.scss */
+/* line 56, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 p {
   margin-top: 23px;
 }
-/* line 56, ../sass/blocks/main/_b-info.scss */
+/* line 57, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 .content {
   margin-top: 23px;
 }
-/* line 57, ../sass/blocks/main/_b-info.scss */
+/* line 58, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 .footer {
   margin-top: 66px;
   letter-spacing: .5px;
+}
+
+/* line 1, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be {
+  margin-top: 65px;
+}
+/* line 3, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be article {
+  border-top: 1px dashed #808080;
+  padding-bottom: 17px;
+  font-size: 16px;
+}
+/* line 8, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be article:first-of-type {
+  margin-top: 22px;
+  padding-top: 3px;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed #808080;
+}
+/* line 14, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be article:nth-of-type(5) {
+  padding-bottom: 19px;
+}
+/* line 15, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be article p {
+  letter-spacing: .3px;
+}
+/* line 17, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+/* line 22, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be h2 {
+  font-size: 24px;
+}
+/* line 25, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be .content {
+  float: left;
+  width: 743px;
+}
+/* line 29, ../sass/blocks/main/_b-how-to-be.scss */
+.b-how-to-be .download {
+  float: right;
+  margin-top: 23px;
+  margin-right: 3px;
 }
