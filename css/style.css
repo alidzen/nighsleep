@@ -537,3 +537,44 @@ body {
   margin-top: 22px;
   border: none;
 }
+
+/* line 1, ../sass/blocks/main/_b-questions-lawyer.scss */
+.b-questions-lawyer {
+  margin-top: 22px;
+  font-size: 16px;
+}
+/* line 4, ../sass/blocks/main/_b-questions-lawyer.scss */
+.b-questions-lawyer .header {
+  padding-bottom: 3px;
+  border-bottom: 1px dashed #808080;
+}
+/* line 7, ../sass/blocks/main/_b-questions-lawyer.scss */
+.b-questions-lawyer .header h1 {
+  display: inline-block;
+  font-size: 28px;
+}
+/* line 11, ../sass/blocks/main/_b-questions-lawyer.scss */
+.b-questions-lawyer .header .btn-lawyer {
+  float: right;
+  margin-top: 19px;
+  background-color: #ffe36e;
+  padding: 7px 22px;
+  border-radius: 0;
+  color: #131313;
+  letter-spacing: .6px;
+}
+/* line 22, ../sass/blocks/main/_b-questions-lawyer.scss */
+.b-questions-lawyer p {
+  padding-bottom: 15px;
+  line-height: 20px;
+  border-bottom: 1px dashed #808080;
+}
+/* line 23, ../sass/blocks/main/_b-questions-lawyer.scss */
+.b-questions-lawyer p:first-of-type {
+  margin-top: 14px;
+}
+/* line 27, ../sass/blocks/main/_b-questions-lawyer.scss */
+.b-questions-lawyer p:last-of-type {
+  margin-top: 27px;
+  border: none;
+}
