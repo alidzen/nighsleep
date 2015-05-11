@@ -1,7 +1,7 @@
 .b-how-to-be {
   margin-top: 65px;
   article { 
-    border-top: 1px dashed $color-font-2;
+    border-bottom: 1px dashed $color-font-2;
     padding-bottom: 17px;
     font-size: $font-M;
     @extend %clearfix; 
@@ -9,7 +9,7 @@
       margin-top: 22px;
       padding-top: 3px;
       padding-bottom: 18px;
-      border-bottom: 1px dashed $color-font-2;
+      border-top: 1px dashed $color-font-2;
     }
     &:nth-of-type(5) { padding-bottom: 19px; }
     p { letter-spacing: .3px; }

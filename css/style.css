@@ -470,7 +470,7 @@ body {
 }
 /* line 3, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be article {
-  border-top: 1px dashed #808080;
+  border-bottom: 1px dashed #808080;
   padding-bottom: 17px;
   font-size: 16px;
 }
@@ -479,7 +479,7 @@ body {
   margin-top: 22px;
   padding-top: 3px;
   padding-bottom: 18px;
-  border-bottom: 1px dashed #808080;
+  border-top: 1px dashed #808080;
 }
 /* line 14, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be article:nth-of-type(5) {
@@ -509,4 +509,31 @@ body {
   float: right;
   margin-top: 23px;
   margin-right: 3px;
+}
+
+/* line 1, ../sass/blocks/main/_b-popular.scss */
+.b-popular {
+  margin-top: 62px;
+  font-size: 16px;
+}
+/* line 4, ../sass/blocks/main/_b-popular.scss */
+.b-popular h1 {
+  padding-bottom: 14px;
+  font-size: 28px;
+  border-bottom: 1px dashed #808080;
+}
+/* line 9, ../sass/blocks/main/_b-popular.scss */
+.b-popular p {
+  padding-bottom: 14px;
+  line-height: 19px;
+  border-bottom: 1px dashed #808080;
+}
+/* line 10, ../sass/blocks/main/_b-popular.scss */
+.b-popular p:first-of-type {
+  margin-top: -14px;
+}
+/* line 14, ../sass/blocks/main/_b-popular.scss */
+.b-popular p:last-of-type {
+  margin-top: 22px;
+  border: none;
 }
