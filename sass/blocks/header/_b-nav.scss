@@ -1,8 +1,12 @@
+.b-nav {
+  width: 100%;
+  background-color: $color-bg-header;
+}
+
 .nav-list {
   height: 50px;
   font-size: $font-SL;
   color: $color-font-main;
-  background-color: $color-bg-header;
   &:before {
     content: "";
     display: inline-block;
