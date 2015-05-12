@@ -37,8 +37,7 @@ body {
 
 body {
   margin: 0 auto;
-  width: 1200px;
-  max-width: 1200px;
+  width: 100%;
   background-color: #f5f5f5;
   color: #131313;
   font-weight: 400;
@@ -49,6 +48,10 @@ body {
 
 a {
   color: #0084f2;
+}
+
+li {
+  list-style: none;
 }
 
 .wrapper-fix {
@@ -76,7 +79,9 @@ footer {
 }
 
 .inner-wrapper {
-  margin: 0 99px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 99px;
 }
 
 .noactive-color {
@@ -346,10 +351,10 @@ footer {
   padding-top: 0;
   padding-bottom: 20px;
   border-bottom: 1px dashed #808080;
+  /* &:first-of-type {
+     border-top: 1px dashed $color-font-2;
+   }*/
   font-size: 16px;
-}
-.places:first-of-type {
-  border-top: 1px dashed #808080;
 }
 .places h2 {
   font-size: 24px;
@@ -501,6 +506,10 @@ footer {
   border: none;
 }
 
+.b-popular .answer > p {
+  border: none;
+}
+
 .b-questions-lawyer {
   margin-top: 22px;
   font-size: 16px;
@@ -536,6 +545,55 @@ footer {
 }
 .b-questions-lawyer p span {
   color: #808080;
+}
+
+.lawyer-form {
+  padding: 32px 25px 18px;
+  font-size: 16px;
+  background: #e5e5e5;
+}
+.lawyer-form h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.lawyer-form p {
+  border: none;
+}
+.lawyer-form textarea {
+  width: 99%;
+}
+.lawyer-form textarea,
+.lawyer-form input {
+  padding: 5px;
+}
+.lawyer-form ul {
+  margin-top: 10px;
+  padding: 0;
+}
+.lawyer-form ul li {
+  display: inline-block;
+}
+.lawyer-form ul li:nth-child(2n) {
+  margin-left: 10px;
+  color: #808080;
+}
+.lawyer-form input,
+.lawyer-form submit {
+  width: 280px;
+}
+.lawyer-form .btn-lawyer {
+  width: 280px;
+  display: block;
+  margin-top: 10px;
+  background-color: #ffe36e;
+  padding: 7px 22px;
+  border-radius: 0;
+  color: #131313;
+  letter-spacing: .6px;
+}
+.lawyer-form .success > p {
+  margin: 0;
+  padding: 0;
 }
 
 .b-vacancy {

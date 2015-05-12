@@ -6,8 +6,7 @@ body { height: 100%; }
 
 body {
   margin: 0 auto;
-  width: 1200px;
-  max-width: 1200px;
+  width: 100%;
   background-color: $color-bg-main;
   color: $color-font-main;
   font-weight: $font-weight-regular;
@@ -17,6 +16,8 @@ body {
 }
 
 a { color: $color-font-3; }
+
+li { list-style: none; }
 
 .wrapper-fix { /* Прижимает footer */
   min-height: 100%;
@@ -40,7 +41,10 @@ footer {
 }
 
 .inner-wrapper {
-  margin: 0 99px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 99px;
+  
 }
 
 .noactive-color { /* тусклый цвет */
