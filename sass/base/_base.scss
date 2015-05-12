@@ -1,6 +1,8 @@
 /*=====================================
    Base styles. Задаем переменные, заголовки, body и прочее  по умолчанию.
 ===================================== */
+html,
+body { height: 100%; }
 
 body {
   margin: 0 auto;
@@ -15,6 +17,18 @@ body {
 }
 
 a { color: $color-font-3; }
+
+.wrapper-fix { /* Прижимает footer */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -350px;
+}
+
+.wrapper-fix__push,
+footer {
+  height: 350px;
+} 
 
 %clearfix { /* Fix для float элементов */
   &:before,
@@ -37,6 +51,8 @@ a { color: $color-font-3; }
   border-top: 1px solid #dedede;
   
 }
+
+
 
 
 /*

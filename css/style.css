@@ -5,7 +5,6 @@
    Settings. Задаем переменные.
 ======================================= */
 /* Font-size */
-/* line 9, ../sass/base/_settings.scss */
 .font-M {
   font-size: 16px;
 }
@@ -31,7 +30,11 @@
 /*=====================================
    Base styles. Задаем переменные, заголовки, body и прочее  по умолчанию.
 ===================================== */
-/* line 5, ../sass/base/_base.scss */
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0 auto;
   width: 1200px;
@@ -44,37 +47,43 @@ body {
   line-height: 18px;
 }
 
-/* line 17, ../sass/base/_base.scss */
 a {
   color: #0084f2;
 }
 
-/* line 19, ../sass/base/_base.scss */
+.wrapper-fix {
+  /* Прижимает footer */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -350px;
+}
+
+.wrapper-fix__push,
+footer {
+  height: 350px;
+}
+
 .b-features article, .b-info, .b-how-to-be article, .b-footer-info {
   /* Fix для float элементов */
 }
-/* line 20, ../sass/base/_base.scss */
 .b-features article:before, .b-info:before, .b-how-to-be article:before, .b-footer-info:before, .b-features article:after, .b-info:after, .b-how-to-be article:after, .b-footer-info:after {
   content: "";
   display: table;
 }
-/* line 25, ../sass/base/_base.scss */
 .b-features article:after, .b-info:after, .b-how-to-be article:after, .b-footer-info:after {
   clear: both;
 }
 
-/* line 28, ../sass/base/_base.scss */
 .inner-wrapper {
   margin: 0 99px;
 }
 
-/* line 32, ../sass/base/_base.scss */
 .noactive-color {
   /* тусклый цвет */
   color: #808080;
 }
 
-/* line 35, ../sass/base/_base.scss */
 .hr-line {
   width: 100%;
   border-top: 1px solid #dedede;
@@ -85,7 +94,6 @@ a {
 *
 */
 /* Выпадающие блоки */
-/* line 2, ../sass/base/_boot-modified.scss */
 .well {
   padding: 0;
   border: none;
@@ -100,33 +108,28 @@ a {
    Utilities.
 ==================================== */
 /* Спрайты */
-/* line 9, ../sass/utilities/_utilities.scss */
 .social {
   display: block;
 }
 
-/* line 13, ../sass/utilities/_utilities.scss */
 .fb-header {
   width: 22px;
   height: 22px;
   background: url('/img/icons-s699929d2ed.png') 0 0;
 }
 
-/* line 19, ../sass/utilities/_utilities.scss */
 .vk-header {
   width: 22px;
   height: 22px;
   background: url('/img/icons-s699929d2ed.png') -124px 0;
 }
 
-/* line 25, ../sass/utilities/_utilities.scss */
 .inst-header {
   width: 22px;
   height: 22px;
   background: url('/img/icons-s699929d2ed.png') -97px 0;
 }
 
-/* line 31, ../sass/utilities/_utilities.scss */
 .flag-rus {
   width: 30px;
   height: 20px;
@@ -134,119 +137,97 @@ a {
 }
 
 /* Blocks */
-/* line 1, ../sass/blocks/header/_b-header-banner.scss */
 .b-header-banner {
   width: 100%;
 }
 
-/* line 5, ../sass/blocks/header/_b-header-banner.scss */
 .banner-list {
   height: 35px;
   font-size: 14px;
   background-color: #5aa141;
   margin: 0;
 }
-/* line 10, ../sass/blocks/header/_b-header-banner.scss */
 .banner-list:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 16, ../sass/blocks/header/_b-header-banner.scss */
 .banner-list li {
   display: inline-block;
   margin-left: 160px;
 }
-/* line 19, ../sass/blocks/header/_b-header-banner.scss */
 .banner-list li:first-of-type {
   margin-left: 50px;
   color: #ffffff;
 }
-/* line 23, ../sass/blocks/header/_b-header-banner.scss */
 .banner-list li:last-of-type {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 27, ../sass/blocks/header/_b-header-banner.scss */
 .banner-list .btn-header {
   background-color: #ffe36e;
   border-bottom: 2px solid #e8c319;
   padding: 2px 23px 0;
 }
 
-/* line 1, ../sass/blocks/header/_b-nav.scss */
 .nav-list {
   height: 50px;
   font-size: 14px;
   color: #131313;
   background-color: #e5e5e5;
 }
-/* line 6, ../sass/blocks/header/_b-nav.scss */
 .nav-list:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 12, ../sass/blocks/header/_b-nav.scss */
 .nav-list li {
   display: inline-block;
   /* соц. сети */
 }
-/* line 14, ../sass/blocks/header/_b-nav.scss */
 .nav-list li .active {
   color: #808080;
 }
-/* line 15, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:first-of-type {
   margin-left: 13px;
   color: #ffffff;
 }
-/* line 19, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(2) {
   margin-left: 107px;
 }
-/* line 20, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(3) {
   margin-left: 96px;
 }
-/* line 21, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(4) {
   margin-left: 80px;
 }
-/* line 22, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(5) {
   margin-left: 78px;
 }
-/* line 23, ../sass/blocks/header/_b-nav.scss */
 .nav-list li:nth-child(6) {
   margin-left: 90px;
 }
-/* line 26, ../sass/blocks/header/_b-nav.scss */
 .nav-list li .social {
   margin-left: 2px;
   margin-bottom: -7px;
   border-radius: 50%;
 }
-/* line 31, ../sass/blocks/header/_b-nav.scss */
 .nav-list li .fb-header {
   margin-left: 65px;
 }
-/* line 33, ../sass/blocks/header/_b-nav.scss */
 .nav-list li a {
   color: #131313;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-/* line 1, ../sass/blocks/header/_b-header-title.scss */
 .b-header-title {
   position: relative;
   text-align: center;
   margin: 0 auto;
   width: 100%;
 }
-/* line 6, ../sass/blocks/header/_b-header-title.scss */
 .b-header-title h1 {
   position: relative;
   display: inline-block;
@@ -254,7 +235,6 @@ a {
   font-size: 45px;
   z-index: 99;
 }
-/* line 12, ../sass/blocks/header/_b-header-title.scss */
 .b-header-title h1:after {
   content: "";
   position: absolute;
@@ -266,12 +246,10 @@ a {
   background-color: #ffe36e;
   z-index: -1;
 }
-/* line 25, ../sass/blocks/header/_b-header-title.scss */
 .b-header-title p {
   font-size: 16px;
   color: #808080;
 }
-/* line 29, ../sass/blocks/header/_b-header-title.scss */
 .b-header-title a {
   display: block;
   margin-top: -6px;
@@ -280,26 +258,21 @@ a {
 
 /* Main */
 /* Задаем общие стили для блоков */
-/* line 2, ../sass/blocks/main/_b-features.scss */
 .b-features {
   margin-top: 41px;
 }
-/* line 4, ../sass/blocks/main/_b-features.scss */
 .b-features h1 {
   font-size: 36px;
   text-transform: uppercase;
 }
-/* line 9, ../sass/blocks/main/_b-features.scss */
 .b-features img {
   float: left;
 }
 
-/* line 12, ../sass/blocks/main/_b-features.scss */
 .b-features > article:not(first-of-type) {
   margin-top: 39px;
 }
 
-/* line 16, ../sass/blocks/main/_b-features.scss */
 .features-content {
   margin-top: 22px;
   padding-top: 28px;
@@ -307,12 +280,10 @@ a {
   border-top: 1px dashed #808080;
   border-bottom: 1px dashed #808080;
 }
-/* line 22, ../sass/blocks/main/_b-features.scss */
 .features-content p {
   font-size: 16px;
 }
 
-/* line 25, ../sass/blocks/main/_b-features.scss */
 .features-content-text > a,
 .features-content-text > span > a,
 .features-content-text > span {
@@ -322,7 +293,6 @@ a {
   letter-spacing: -.3px;
 }
 
-/* line 34, ../sass/blocks/main/_b-features.scss */
 .features-content-text {
   margin-left: 350px;
   margin-top: -22px;
@@ -330,16 +300,13 @@ a {
   line-height: 19px;
   letter-spacing: .18px;
 }
-/* line 40, ../sass/blocks/main/_b-features.scss */
 .features-content-text h2 {
   font-size: 24px;
 }
-/* line 41, ../sass/blocks/main/_b-features.scss */
 .features-content-text p:last-of-type {
   margin-top: 27px;
 }
 
-/* line 44, ../sass/blocks/main/_b-features.scss */
 .other-places {
   display: inline-block;
   margin-top: 24px;
@@ -348,104 +315,84 @@ a {
 }
 
 /* Вносим корректировки в отдельные блоки */
-/* line 53, ../sass/blocks/main/_b-features.scss */
 .feature-3 .features-content-text p:last-of-type {
   margin-top: 64px;
 }
 
-/* line 57, ../sass/blocks/main/_b-features.scss */
 .feature-4 .features-content-text {
   margin-top: -20px;
 }
-/* line 58, ../sass/blocks/main/_b-features.scss */
 .feature-4 .other-places {
   margin-top: 21px;
 }
 
-/* line 61, ../sass/blocks/main/_b-features.scss */
 .feature-4 .features-content-text > span,
 .feature-4 .features-content-text > span > a {
   margin-top: 0;
 }
 
-/* line 67, ../sass/blocks/main/_b-features.scss */
 .feature-4 .features-content-text > span:first-of-type {
   margin-top: 10px;
 }
 
-/* line 72, ../sass/blocks/main/_b-features.scss */
 .feature-5 .features-content-text p:last-of-type {
   margin-top: 64px;
 }
-/* line 74, ../sass/blocks/main/_b-features.scss */
 .feature-5 .other-places {
   margin-top: 27px;
 }
 
-/* line 77, ../sass/blocks/main/_b-features.scss */
 .places {
   padding-top: 0;
   padding-bottom: 20px;
   border-bottom: 1px dashed #808080;
   font-size: 16px;
 }
-/* line 81, ../sass/blocks/main/_b-features.scss */
 .places:first-of-type {
   border-top: 1px dashed #808080;
 }
-/* line 85, ../sass/blocks/main/_b-features.scss */
 .places h2 {
   font-size: 24px;
 }
 
-/* line 1, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail {
   margin-top: 57px;
   margin-right: 388px;
 }
-/* line 4, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail h3 {
   font-size: 28px;
 }
-/* line 5, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail p {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: .1px;
 }
-/* line 6, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail p:first-of-type {
   margin-top: 17px;
   font-size: 16px;
   line-height: inherit;
 }
-/* line 14, ../sass/blocks/main/_b-sms-mail.scss */
 .b-sms-mail p:last-of-type {
   margin-top: 17px;
 }
 
 /* Задаем общие стили для блоков */
-/* line 2, ../sass/blocks/main/_b-info.scss */
 .b-info {
   margin-top: 65px;
 }
-/* line 5, ../sass/blocks/main/_b-info.scss */
 .b-info h3 {
   font-size: 28px;
 }
-/* line 6, ../sass/blocks/main/_b-info.scss */
 .b-info h4,
 .b-info p {
   font-size: 16px;
   line-height: 21px;
   letter-spacing: .2px;
 }
-/* line 12, ../sass/blocks/main/_b-info.scss */
 .b-info p {
   margin-top: 29px;
   line-height: 24px;
 }
-/* line 16, ../sass/blocks/main/_b-info.scss */
 .b-info [class^="block-"] {
   float: left;
   box-sizing: border-box;
@@ -454,146 +401,118 @@ a {
   padding: 12px 11px 18px 28px;
   border: 3px solid #ffdf5c;
 }
-/* line 24, ../sass/blocks/main/_b-info.scss */
 .b-info .content {
   position: relative;
   margin-top: 29px;
   padding-left: 146px;
 }
-/* line 28, ../sass/blocks/main/_b-info.scss */
 .b-info .content img {
   position: absolute;
   left: 0;
 }
-/* line 33, ../sass/blocks/main/_b-info.scss */
 .b-info .footer {
   font-size: 18px;
 }
 
 /* Корректировки блоков */
-/* line 41, ../sass/blocks/main/_b-info.scss */
 .b-info .block-1 .footer {
   margin-top: 30px;
   line-height: 21px;
 }
 
-/* line 49, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 {
   margin-left: 46px;
 }
-/* line 51, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 h3 {
   line-height: 32px;
   letter-spacing: .5px;
 }
-/* line 55, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 h4 {
   line-height: 24px;
 }
-/* line 56, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 p {
   margin-top: 23px;
 }
-/* line 57, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 .content {
   margin-top: 23px;
 }
-/* line 58, ../sass/blocks/main/_b-info.scss */
 .b-info .block-2 .footer {
   margin-top: 66px;
   letter-spacing: .5px;
 }
 
-/* line 1, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be {
   margin-top: 65px;
 }
-/* line 3, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be article {
   border-bottom: 1px dashed #808080;
   padding-bottom: 17px;
   font-size: 16px;
 }
-/* line 8, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be article:first-of-type {
   margin-top: 22px;
   padding-top: 3px;
   padding-bottom: 18px;
   border-top: 1px dashed #808080;
 }
-/* line 14, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be article:nth-of-type(5) {
   padding-bottom: 19px;
 }
-/* line 15, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be article p {
   letter-spacing: .3px;
 }
-/* line 17, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be h1 {
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: .5px;
 }
-/* line 22, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be h2 {
   font-size: 24px;
 }
-/* line 25, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be .content {
   float: left;
   width: 743px;
 }
-/* line 29, ../sass/blocks/main/_b-how-to-be.scss */
 .b-how-to-be .download {
   float: right;
   margin-top: 23px;
   margin-right: 3px;
 }
 
-/* line 1, ../sass/blocks/main/_b-popular.scss */
 .b-popular {
   margin-top: 62px;
   font-size: 16px;
 }
-/* line 4, ../sass/blocks/main/_b-popular.scss */
 .b-popular h1 {
   padding-bottom: 14px;
   font-size: 28px;
   border-bottom: 1px dashed #808080;
 }
-/* line 9, ../sass/blocks/main/_b-popular.scss */
 .b-popular p {
   padding-bottom: 14px;
   line-height: 19px;
   border-bottom: 1px dashed #808080;
 }
-/* line 10, ../sass/blocks/main/_b-popular.scss */
 .b-popular p:first-of-type {
   margin-top: -14px;
 }
-/* line 14, ../sass/blocks/main/_b-popular.scss */
 .b-popular p:last-of-type {
   margin-top: 22px;
   border: none;
 }
 
-/* line 1, ../sass/blocks/main/_b-questions-lawyer.scss */
 .b-questions-lawyer {
   margin-top: 22px;
   font-size: 16px;
 }
-/* line 4, ../sass/blocks/main/_b-questions-lawyer.scss */
 .b-questions-lawyer .header {
   padding-bottom: 3px;
   border-bottom: 1px dashed #808080;
 }
-/* line 7, ../sass/blocks/main/_b-questions-lawyer.scss */
 .b-questions-lawyer .header h1 {
   display: inline-block;
   font-size: 28px;
 }
-/* line 11, ../sass/blocks/main/_b-questions-lawyer.scss */
 .b-questions-lawyer .header .btn-lawyer {
   float: right;
   margin-top: 19px;
@@ -603,134 +522,107 @@ a {
   color: #131313;
   letter-spacing: .6px;
 }
-/* line 22, ../sass/blocks/main/_b-questions-lawyer.scss */
 .b-questions-lawyer p {
   padding-bottom: 15px;
   line-height: 20px;
   border-bottom: 1px dashed #808080;
 }
-/* line 23, ../sass/blocks/main/_b-questions-lawyer.scss */
 .b-questions-lawyer p:first-of-type {
   margin-top: 14px;
 }
-/* line 27, ../sass/blocks/main/_b-questions-lawyer.scss */
 .b-questions-lawyer p:last-of-type {
   margin-top: 27px;
   border: none;
 }
-/* line 31, ../sass/blocks/main/_b-questions-lawyer.scss */
 .b-questions-lawyer p span {
   color: #808080;
 }
 
-/* line 1, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy {
   margin-top: 41px;
   font-size: 16px;
 }
-/* line 4, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy .header {
   padding-bottom: 26px;
   border-bottom: 1px dashed #808080;
 }
-/* line 7, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy .header h1 {
   display: block;
   font-size: 28px;
   letter-spacing: .2px;
 }
-/* line 12, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy .header .tumbler {
   display: inline-block;
   margin-top: 9px;
 }
-/* line 15, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy .header .tumbler a:first-of-type {
   color: #131313;
 }
-/* line 20, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy p {
   padding-bottom: 11px;
   line-height: 23px;
   border-bottom: 1px dashed #808080;
   letter-spacing: .2px;
 }
-/* line 21, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy p:first-of-type {
   margin-top: 12px;
 }
-/* line 26, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy p:last-of-type {
   margin-top: 18px;
   border: none;
 }
-/* line 30, ../sass/blocks/main/_b-vacancy.scss */
 .b-vacancy p span {
   color: #808080;
 }
 
 /* Footer */
-/* line 1, ../sass/blocks/footer/_b-footer-info.scss */
 footer {
-  height: 350px;
   margin-top: 51px;
   background-color: #e5e5e5;
 }
 
-/* line 7, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info {
   margin-top: 20px;
   font-size: 16px;
 }
-/* line 11, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .rights,
 .b-footer-info .authors {
-  margin-top: 53px;
+  margin-top: 44px;
   box-sizing: border-box;
   float: left;
   height: 226px;
   /* height + margin-top + .hr-line = 280px */
   width: 50%;
 }
-/* line 20, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .rights {
   padding-top: 1px;
 }
-/* line 22, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .rights p {
-  margin-top: 16;
+  margin-top: 16px;
   color: #808080;
 }
-/* line 28, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .authors {
   padding-left: 57px;
 }
-/* line 31, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .authors .authors-list li {
   list-style: none;
 }
-/* line 33, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .authors .authors-list li:nth-of-type(2) {
   margin-top: 10px;
 }
-/* line 34, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .authors .authors-list li:nth-of-type(7) {
   margin-top: 39px;
 }
-/* line 35, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .authors .authors-list li:last-of-type {
   margin-top: 10px;
 }
-/* line 37, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .authors .authors-list li:last-of-type a {
   text-transform: uppercase;
 }
-/* line 39, ../sass/blocks/footer/_b-footer-info.scss */
 .b-footer-info .authors .authors-list li span {
   color: #808080;
 }
 
-/* line 1, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list {
   height: 70px;
   margin-top: 2px;
@@ -738,33 +630,27 @@ footer {
   font-size: 16px;
   letter-spacing: .4px;
 }
-/* line 7, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 13, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list li {
   display: inline-block;
   margin-left: 108px;
   list-style: none;
 }
-/* line 17, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list li:first-of-type {
   margin-left: -5px;
 }
-/* line 18, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list li:nth-of-type(2) {
   width: 287px;
   margin-left: 8px;
 }
-/* line 22, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list li:last-of-type {
   margin-left: 268px;
 }
-/* line 24, ../sass/blocks/footer/_b-footer-list.scss */
 .footer-list .copyright {
   color: #808080;
 }
