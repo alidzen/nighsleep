@@ -75,6 +75,9 @@
     color: $color-font-main;
     letter-spacing: .6px;
   }
+  
+  .success,
+  .error { display: none; }
   .success>p {
     margin: 0;
     padding: 0;
