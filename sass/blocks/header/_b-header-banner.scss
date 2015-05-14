@@ -1,7 +1,7 @@
 .b-header-banner {
-  width: 100%;
-  background-color: $color-2;
-  background-size: cover;
+  min-width: 100%;
+  background: $color-2;
+  background-size: 100%;
 }
 
 .banner-list {
@@ -26,9 +26,9 @@
     }
   }
   .btn-header {
-    background-color: #ffe36e;
+    background-color: $color-3;
     border-bottom: 2px solid #e8c319;
-    padding: 2px 23px 0;
+    padding: 2px 23px 2px;
   }
 }
 

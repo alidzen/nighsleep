@@ -856,14 +856,14 @@
         <div class="collapse" id="collapseQuestionForm">
           <div class="well">
             <div class="lawyer-form">
-              <div class="access">
-                <h3>
-                  Ваш вопрос юристу
-                </h3>
-                <p>
-                  Юрист отвечает в течении двух суток 
-                </p>
-                <form action="/temp.json" method="post" data-def="true">
+              <h3>
+                Ваш вопрос юристу
+              </h3>
+              <p>
+                Юрист отвечает в течении двух суток 
+              </p>
+              <form action="temp.json" method="post" data-def="true">
+                <div class="access">
                   <textarea name="question" id="" cols="10" rows="10" placeholder="Вопрос"></textarea>
                   <ul>
                     <li>
@@ -884,30 +884,31 @@
                   <button class="btn btn-lawyer">
                     Отправить вопрос
                   </button>
-                </form>
-              </div> <!-- access -->
-              <div class="error">
-                <p>
-                  Простите, произошла ошибка, повторите отправку формы.
-                </p>
-              </div> <!-- /error -->
-              <div class="success">
-                <h3>
-                  Вопрос отправлен. Спасибо!
-                </h3>
-                <p>
-                  Когда юрист ответит. Вы получите уведомление.
-                </p>
-                <p>
-                  Если вы не получили ответ, пожалуйста, позвоните в 
-                  <strong>
-                      Консультационную службу по телефону +7 (812) 643-24-15
-                  </strong> <br>
-                  <span class="noactive-color">
-                    (пн, вт, ср, пт с 10:00 до 17:00, перерыв с 14:00 до 15:00)
-                  </span>
-                </p>
-              </div>
+                </div> <!-- access -->
+                
+                <div class="error">
+                  <p>
+                    Простите, произошла ошибка, повторите отправку формы.
+                  </p>
+                </div> <!-- /error -->
+                <div class="success">
+                  <h3>
+                    Вопрос отправлен. Спасибо!
+                  </h3>
+                  <p>
+                    Когда юрист ответит. Вы получите уведомление.
+                  </p>
+                  <p>
+                    Если вы не получили ответ, пожалуйста, позвоните в 
+                    <strong>
+                        Консультационную службу по телефону +7 (812) 643-24-15
+                    </strong> <br>
+                    <span class="noactive-color">
+                      (пн, вт, ср, пт с 10:00 до 17:00, перерыв с 14:00 до 15:00)
+                    </span>
+                  </p>
+                </div> <!-- / success-->
+              </form>
 
           </div> <!-- lawyer-form -->
             

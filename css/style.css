@@ -125,32 +125,32 @@ footer {
 .fb-header {
   width: 22px;
   height: 22px;
-  background: url('../img/icons-s699929d2ed.png') 0 0;
+  background: url('/img/icons-s699929d2ed.png') 0 0;
 }
 
 .vk-header {
   width: 22px;
   height: 22px;
-  background: url('../img/icons-s699929d2ed.png') -124px 0;
+  background: url('/img/icons-s699929d2ed.png') -124px 0;
 }
 
 .inst-header {
   width: 22px;
   height: 22px;
-  background: url('../img/icons-s699929d2ed.png') -97px 0;
+  background: url('/img/icons-s699929d2ed.png') -97px 0;
 }
 
 .flag-rus {
   width: 30px;
   height: 20px;
-  background: url('../img/icons-s699929d2ed.png') -62px 0;
+  background: url('/img/icons-s699929d2ed.png') -62px 0;
 }
 
 /* Blocks */
 .b-header-banner {
-  width: 100%;
-  background-color: #5aa141;
-  background-size: cover;
+  min-width: 100%;
+  background: #5aa141;
+  background-size: 100%;
 }
 
 .banner-list {
@@ -176,9 +176,9 @@ footer {
   color: rgba(255, 255, 255, 0.5);
 }
 .banner-list .btn-header {
-  background-color: #ffe36e;
+  background-color: #ffdf5c;
   border-bottom: 2px solid #e8c319;
-  padding: 2px 23px 0;
+  padding: 2px 23px 2px;
 }
 
 .b-nav {
@@ -210,10 +210,10 @@ footer {
   color: #ffffff;
 }
 .nav-list li:nth-child(2) {
-  margin-left: 105px;
+  margin-left: 100px;
 }
 .nav-list li:nth-child(3) {
-  margin-left: 95px;
+  margin-left: 93px;
 }
 .nav-list li:nth-child(4) {
   margin-left: 79px;
@@ -222,7 +222,7 @@ footer {
   margin-left: 78px;
 }
 .nav-list li:nth-child(6) {
-  margin-left: 89px;
+  margin-left: 85px;
 }
 .nav-list li .social {
   margin-left: 2px;
@@ -259,7 +259,7 @@ footer {
   display: inline-block;
   width: 100%;
   height: 10px;
-  background-color: #ffe36e;
+  background-color: #ffdf5c;
   z-index: -1;
 }
 .b-header-title p {
@@ -293,8 +293,8 @@ footer {
   margin-top: 22px;
   padding-top: 28px;
   padding-bottom: 23px;
-  border-top: 1px dashed #808080;
-  border-bottom: 1px dashed #808080;
+  border-top: 1px dotted #808080;
+  border-bottom: 1px dotted #808080;
 }
 .features-content p {
   font-size: 16px;
@@ -361,9 +361,9 @@ footer {
 .places {
   padding-top: 0;
   padding-bottom: 20px;
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px dotted #808080;
   /* &:first-of-type {
-     border-top: 1px dashed $color-font-2;
+     border-top: 1px dotted $color-font-2;
    }*/
   font-size: 16px;
 }
@@ -461,7 +461,7 @@ footer {
   margin-top: 65px;
 }
 .b-how-to-be article {
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px dotted #808080;
   padding-bottom: 17px;
   font-size: 16px;
 }
@@ -469,7 +469,7 @@ footer {
   margin-top: 22px;
   padding-top: 3px;
   padding-bottom: 18px;
-  border-top: 1px dashed #808080;
+  border-top: 1px dotted #808080;
 }
 .b-how-to-be article:nth-of-type(5) {
   padding-bottom: 19px;
@@ -502,12 +502,12 @@ footer {
 .b-popular h1 {
   padding-bottom: 14px;
   font-size: 28px;
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px dotted #808080;
 }
 .b-popular p {
   padding-bottom: 14px;
   line-height: 19px;
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px dotted #808080;
 }
 .b-popular p:first-of-type {
   margin-top: -14px;
@@ -527,7 +527,7 @@ footer {
 }
 .b-questions-lawyer .header {
   padding-bottom: 3px;
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px dotted #808080;
 }
 .b-questions-lawyer .header h1 {
   display: inline-block;
@@ -536,16 +536,16 @@ footer {
 .b-questions-lawyer .header .btn-lawyer {
   float: right;
   margin-top: 19px;
-  background-color: #ffe36e;
+  background-color: #ffdf5c;
   padding: 7px 22px;
   border-radius: 0;
   color: #131313;
-  letter-spacing: .6px;
+  font-weight: 700;
 }
 .b-questions-lawyer p {
   padding-bottom: 15px;
   line-height: 20px;
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px dotted #808080;
 }
 .b-questions-lawyer p:first-of-type {
   margin-top: 14px;
@@ -596,11 +596,11 @@ footer {
   width: 280px;
   display: block;
   margin-top: 10px;
-  background-color: #ffe36e;
+  background-color: #ffdf5c;
   padding: 7px 22px;
   border-radius: 0;
   color: #131313;
-  letter-spacing: .6px;
+  font-weight: 700;
 }
 .lawyer-form .success,
 .lawyer-form .error {
@@ -617,7 +617,7 @@ footer {
 }
 .b-vacancy .header {
   padding-bottom: 26px;
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px dotted #808080;
 }
 .b-vacancy .header h1 {
   display: block;
@@ -634,7 +634,7 @@ footer {
 .b-vacancy p {
   padding-bottom: 11px;
   line-height: 23px;
-  border-bottom: 1px dashed #808080;
+  border-bottom: 1px dotted #808080;
   letter-spacing: .2px;
 }
 .b-vacancy p:first-of-type {
@@ -716,6 +716,7 @@ footer {
 }
 .footer-list li:first-of-type {
   margin-left: -5px;
+  vertical-align: middle;
 }
 .footer-list li:nth-of-type(2) {
   width: 287px;

@@ -210,10 +210,10 @@ footer {
   color: #ffffff;
 }
 .nav-list li:nth-child(2) {
-  margin-left: 105px;
+  margin-left: 100px;
 }
 .nav-list li:nth-child(3) {
-  margin-left: 95px;
+  margin-left: 93px;
 }
 .nav-list li:nth-child(4) {
   margin-left: 79px;
@@ -222,7 +222,7 @@ footer {
   margin-left: 78px;
 }
 .nav-list li:nth-child(6) {
-  margin-left: 89px;
+  margin-left: 85px;
 }
 .nav-list li .social {
   margin-left: 2px;
